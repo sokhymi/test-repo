@@ -1,0 +1,7 @@
+$ for f in *.tif; do
+> gdalwarp -t_srs EPSG:4326 "$f" "${f%.*}.tif
+
+MODIS SOURCE COORDINATE SYSTEM PARAMETERS: "+proj=sinu +R=6371007.181 +nadgrids=@null +wktext"
+
+$ for f in *.tif; do
+> gdalwarp -s_srs "+proj=sinu +R=6371007.181 +nadgrids=@null +wktext" -t_srs EPSG:4326 "$f" "${f%.*}.tif"
