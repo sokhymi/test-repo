@@ -1,2 +1,2 @@
 # test-repo
-test repository
+I've made this repository to learn how Git and GitHub works. Poggers.
